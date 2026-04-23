@@ -1,0 +1,24 @@
+name : print hello world
+on :
+  push :
+
+jobs :
+  printAA :
+    runs-on : ubuntu-latest
+    steps :
+      - name: print hi
+        run : echo "Helloooo"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
