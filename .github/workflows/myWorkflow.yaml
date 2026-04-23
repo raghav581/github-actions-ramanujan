@@ -16,6 +16,9 @@ jobs:
       - name: Run multiple commands
         run: echo "Hello 123"
 
+      - name: Clone Repo
+        uses: action/checkout@v4
+
       - name: Install dependencies
         run: npm ci
 
