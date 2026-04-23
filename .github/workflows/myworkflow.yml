@@ -15,7 +15,11 @@ jobs :
     steps :
       - name : repo clone
         uses : actions/checkout@v4
-        
+      - name : setup Node 
+        uses : actions/setup-node@v4
+        with :
+            node-version : 18.x
+
       - name: print hi
         run : echo "Helloooo"
 
