@@ -1,9 +1,14 @@
 name: Print Hello World
 on:
   push:
+    branches:
+      - action
 jobs:
   print:
     runs-on: macOS-latest
     steps:
       - name: Print Hello
         run: echo "Hello World"
+
+      - name: Run multiple commands
+        run: echo "Hello 123"
