@@ -1,6 +1,8 @@
 name : print hello world
 on :
   push :
+    branches : 
+      - test
 
 jobs :
   printAA :
@@ -9,6 +11,11 @@ jobs :
       - name: print hi
         run : echo "Helloooo"
 
+      - name: Run multiple commands
+        run: |
+          echo "Hello"
+          date
+          uname -a
 
 
 
